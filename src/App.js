@@ -4,11 +4,15 @@ import { BsCloudDownload } from 'react-icons/bs';
 import { GoDatabase } from 'react-icons/go';
 
 function App() {
+  const handleClick = () => {
+    console.log('clicked');
+  };
+
   return (
     <div>
       <h1 className='text-3xl font-bold underline'>Hello</h1>
       <div>
-        <Button primary><GoBell />Click here</Button>
+        <Button onClick={handleClick} primary><GoBell />Click here</Button>
       </div>
       <div>
         <Button secondary><BsCloudDownload />Click here</Button>
